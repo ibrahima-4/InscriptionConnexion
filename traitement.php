@@ -21,7 +21,7 @@
         $email = $_POST['email'];
         $mdp = $_POST['mdp'];
 
-        $requete = $bdd->prepare("INSERT INTO Utilisateurs VALUES (0,:Prenom,:Nom,:Pseudo,:Email,:MotDePasse)");
+        $requete = $bdd->prepare("INSERT INTO Utilisateurs VALUES (0,:Prenom,:Nom,:Pseudo,:Email,MD5(:MotDePasse))");
         $requete->execute(
                 array(
                     "Prenom" => $prenom,
