@@ -27,7 +27,7 @@
             if (isset($_POST['connect'])) {
                 $Login=$_POST['email'];
                 $password=$_POST['mdp'];
-                $requete=$id->prepare("SELECT (IdUser,Prenom,Nom,Pseudo,MotDePasse) FROM Utilisateurs WHERE Email = ?");
+                $requete=$id->prepare("SELECT IdUser,Prenom,Nom,Pseudo,MotDePasse FROM Utilisateurs WHERE Email = ?");
                 $requete->bind_param("s",$Login);
                 $requete->execute();
                 $result=$requete->get_result();
@@ -36,12 +36,14 @@
                 if ($row && password_verify($password, $row['MotDePasse'])) {
                     $_SESSION['email']=$row['email'];
                     $_SESSION['MotDePasse']=$row['MotDePasse'];
-                    if ($row['email']=="ibrahima@php.sn" && $row['MotDePasse']=="phpphp") {
+                    if ($row['email']=="ibrahima@php.sn" ) {
                         header('Location: Accueil.php');
                     }
+                    exit();
                 }else {
                     echo'email ou mot de passe incorrect';
                 }
+                $requete->close();
 
 
 
