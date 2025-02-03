@@ -45,6 +45,7 @@
             <input type="password" name="mdp" id="mdp" placeholder="Entrez votre mot de passe..." required> <br><br>
 
             <input type="submit" name="ok" id="ok" value="Valider">
+            <p>Vous avez un compte ?</p> <button type="submit"><a href="Login.php">Se connecter</a></button>
 
 
         </form>
