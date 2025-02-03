@@ -2,6 +2,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <?php
 session_start();
 
@@ -28,10 +29,15 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
 <!DOCTYPE html>
 <html lang="en">
 >>>>>>> Stashed changes
+=======
+<!DOCTYPE html>
+<html lang="en">
+>>>>>>> Stashed changes
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue</title>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -96,6 +102,8 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 </head>
 <style>
     body{
@@ -120,6 +128,10 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+</html>
+>>>>>>> Stashed changes
+=======
 </html>
 >>>>>>> Stashed changes
 =======
