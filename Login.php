@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
 session_start();
 require_once 'pdo.php';
@@ -23,6 +24,30 @@ if (isset($_POST['connecter'])) {
         $error = "Email ou mot de passe incorrect.";
     }
 }
+=======
+<?php 
+            require('pdo.php');
+            session_start();
+            if(isset($_POST['login'])){
+                $email = $_POST['email'];
+                $mdp = $_POST['mdp'];
+
+                $requete = $bdd->prepare("SELECT * FROM Utilisateurs WHERE email = :Email AND password = MD5(:MotDePasse)");
+                $requete->execute(
+                        ['Email' => $email,
+                        'MotDePasse' => $mdp]);
+
+                $user = $requete->fetch(PDO::FETCH_ASSOC);
+
+                if ($user){
+                    $_SESSION ['prenom'] = $user['prenom'];
+                    $_SESSION ['nom '] = $user ['nom'];
+                    header("location: bienvenue.php");
+                }else{
+                    $error = "Email ou mot de passe incorrect. ";
+                }
+            }
+>>>>>>> Stashed changes
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -119,17 +144,33 @@ input[type="submit"]:hover {
 
 </style>
 <body>
+<<<<<<< Updated upstream
    <h1>Page de Connexion</h1>
 
    <div class="form">
        <?php if (isset($error)) : ?>
            <p class="error"><?= $error; ?></p>
        <?php endif; ?>
+=======
+    <h2>Connexion</h2>
+    <?php if(!empty($error)): ?>
+    <p style="color: red;"><?php echo $error ?></p>
+    <?php endif; ?>
+        <form action="" method="POST">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required placeholder="Entrez votre email..."><br><br>
+
+    <label for="email">Email</label>
+    <input type="password" name="mdp" id="mdp" required placeholder="Entrez votre mot de passe..."><br><br>
+
+    <button type="submit" name="login">Se connecter</button>
+>>>>>>> Stashed changes
 
        <form action="login.php" method="POST">
            <label for="email">Email</label>
            <input type="email" name="email" id="email" placeholder="Entrez votre email..." required><br><br>
 
+<<<<<<< Updated upstream
            <label for="mdp">Mot de passe</label>
            <input type="password" name="mdp" id="mdp" placeholder="Entrez votre mot de passe..." required><br><br>
 
@@ -138,3 +179,9 @@ input[type="submit"]:hover {
    </div>
 </body>
 </html>
+=======
+        </form>
+</body>
+</html>
+
+>>>>>>> Stashed changes

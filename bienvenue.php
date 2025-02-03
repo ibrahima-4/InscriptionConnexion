@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
 session_start();
 
@@ -8,10 +9,15 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+=======
+<!DOCTYPE html>
+<html lang="en">
+>>>>>>> Stashed changes
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue</title>
+<<<<<<< Updated upstream
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -65,3 +71,27 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
     </script>
 </body>
 </html>
+=======
+</head>
+<style>
+    body{
+        background-color: green;
+    }
+    h1{
+        color: yellow;
+        text-align: center;
+        margin-top: 300px;
+    }
+    p{
+        font-size: 25px;
+        color: red;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Bienvenue Mr <?php echo (($_SESSION['prenom']. ' '. $_SESSION['nom'])) ?> !</h1>
+    <p>Vous etes connectée</p>
+    <button><a href="lougout.php">Deconnection</a></button>
+</body>
+</html>
+>>>>>>> Stashed changes
