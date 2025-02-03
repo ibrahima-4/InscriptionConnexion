@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <?php
 session_start();
 
@@ -13,10 +14,15 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
 <!DOCTYPE html>
 <html lang="en">
 >>>>>>> Stashed changes
+=======
+<!DOCTYPE html>
+<html lang="en">
+>>>>>>> Stashed changes
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue</title>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -72,6 +78,8 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
 </body>
 </html>
 =======
+=======
+>>>>>>> Stashed changes
 </head>
 <style>
     body{
@@ -93,5 +101,9 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
     <p>Vous etes connectée</p>
     <button><a href="lougout.php">Deconnection</a></button>
 </body>
+<<<<<<< Updated upstream
+</html>
+>>>>>>> Stashed changes
+=======
 </html>
 >>>>>>> Stashed changes

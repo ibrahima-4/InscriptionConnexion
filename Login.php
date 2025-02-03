@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <?php
 session_start();
 require_once 'pdo.php';
@@ -25,6 +26,8 @@ if (isset($_POST['connecter'])) {
     }
 }
 =======
+=======
+>>>>>>> Stashed changes
 <?php 
             require('pdo.php');
             session_start();
@@ -47,6 +50,9 @@ if (isset($_POST['connecter'])) {
                     $error = "Email ou mot de passe incorrect. ";
                 }
             }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ?>
 <!DOCTYPE html>
@@ -145,6 +151,7 @@ input[type="submit"]:hover {
 </style>
 <body>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
    <h1>Page de Connexion</h1>
 
    <div class="form">
@@ -159,10 +166,25 @@ input[type="submit"]:hover {
         <form action="" method="POST">
     <label for="email">Email</label>
     <input type="email" name="email" id="email" required placeholder="Entrez votre email..."><br><br>
+=======
+    <h2>Connexion</h2>
+    <?php if(!empty($error)): ?>
+    <p style="color: red;"><?php echo $error ?></p>
+    <?php endif; ?>
+        <form action="" method="POST">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required placeholder="Entrez votre email..."><br><br>
 
     <label for="email">Email</label>
     <input type="password" name="mdp" id="mdp" required placeholder="Entrez votre mot de passe..."><br><br>
 
+    <button type="submit" name="login">Se connecter</button>
+>>>>>>> Stashed changes
+
+    <label for="email">Email</label>
+    <input type="password" name="mdp" id="mdp" required placeholder="Entrez votre mot de passe..."><br><br>
+
+<<<<<<< Updated upstream
     <button type="submit" name="login">Se connecter</button>
 >>>>>>> Stashed changes
 
@@ -179,6 +201,12 @@ input[type="submit"]:hover {
    </div>
 </body>
 </html>
+=======
+        </form>
+</body>
+</html>
+
+>>>>>>> Stashed changes
 =======
         </form>
 </body>
