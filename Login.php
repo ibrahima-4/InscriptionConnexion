@@ -30,6 +30,7 @@
 </head>
 <body>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <h1>Connexion</h1>
     <form action="" method="post">
         <table>
@@ -77,10 +78,23 @@
     <label for="email">Email</label>
     <input type="email" name="email" id="email" required placeholder="Entrez votre email..."><br><br>
 
+=======
+    <h2>Connexion</h2>
+    <?php if(!empty($error)): ?>
+    <p style="color: red;"><?php echo $error ?></p>
+    <?php endif; ?>
+        <form action="" method="POST">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required placeholder="Entrez votre email..."><br><br>
+
+>>>>>>> Stashed changes
     <label for="email">Email</label>
     <input type="password" name="mdp" id="mdp" required placeholder="Entrez votre mot de passe..."><br><br>
 
     <button type="submit" name="login">Se connecter</button>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
