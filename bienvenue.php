@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <?php
 session_start();
 
@@ -18,10 +19,15 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
 <!DOCTYPE html>
 <html lang="en">
 >>>>>>> Stashed changes
+=======
+<!DOCTYPE html>
+<html lang="en">
+>>>>>>> Stashed changes
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue</title>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -80,6 +86,8 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 </head>
 <style>
     body{
@@ -102,6 +110,10 @@ if (!isset($_SESSION['prenom']) || !isset($_SESSION['nom'])) {
     <button><a href="lougout.php">Deconnection</a></button>
 </body>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+</html>
+>>>>>>> Stashed changes
+=======
 </html>
 >>>>>>> Stashed changes
 =======
